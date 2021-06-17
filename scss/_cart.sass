@@ -1,0 +1,135 @@
+@import vars
+
+.cart
+    display: flex
+    justify-content: space-between
+    gap: 128px
+    margin-bottom: 128px
+    &__box
+        margin-top: 96px
+        display: flex
+        flex-direction: column
+        gap: 40px
+    &__content
+        display: flex
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+    &__text
+        width: 390px
+        position: relative
+        & h1
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: #222222
+            padding: 22px 0 42px 31px
+            width: 262px
+    &__ul
+        display: flex
+        flex-direction: column
+        gap: 6px
+    &__svg
+        position: absolute
+        right: 22px
+        top: 28px
+    &__textColor
+        color: $lightRed
+    &__input-num
+        width: 44px
+        height: 24px
+        margin-left: 24px
+    &__li-font
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        padding-left: 32px
+    &__span
+        white-space: nowrap
+    &__buttonbox
+        display: flex
+        justify-content: space-between
+        margin-top: 32px
+    &__button
+        width: 235px
+        height: 50px
+        background: #FFFFFF
+        border: 1px solid #A4A4A4
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__input
+        margin-top: 112px
+        &_form
+            width: 360px
+            height: 44px
+            border: 1px solid #A4A4A4
+            padding-left: 18px
+            padding-right: 18px
+            box-sizing: border-box
+        &_but
+            width: 100px
+            height: 34px
+            margin-top: 4px
+            background: #FFFFFF
+            border: 1px solid #A4A4A4
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 20px
+    &__total
+        width: 360px
+        height: 214px
+        background: #F5F3F3
+        margin-top: 56px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        justify-content: space-between
+        padding: 34px
+        box-sizing: border-box
+        &_p
+            font-weight: normal
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+        &_span
+            margin-left: 25px
+        &_h2
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+            margin-right: 3px
+        &_spanColor
+            font-weight: 700
+            margin-left: 25px
+            color: $lightRed
+        &_but
+            margin: 0 auto
+            width: 273px
+            height: 50px
+            background: $lightRed
+            color: white
+            border: none
+            font-family: Lato
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #FFFFFF
+    &__bord
+        margin: 0 auto
+        width: 275px
+        height: 1px
+        background: #E2E2E2

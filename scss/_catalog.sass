@@ -1,0 +1,123 @@
+@import _vars
+
+.steps
+  background: #F8F3F4
+  height: 148px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__title
+    font-size: 24px
+    line-height: 29px
+    color: $lightRed
+
+  &__nav
+    display: flex
+    list-style: none
+
+  &__list
+    &:not(:last-child)::after
+      content: '/'
+      margin-left: 8px
+      margin-right: 8px
+
+  &__link
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+
+    &_color
+      color: $lightRed
+
+  &__transform
+    display: inline-block
+    transition: transform .5s
+    &:hover
+      transform: scale(1.1, 1.1)
+      color: $lightRed
+.main
+  &__menu
+    width: 1140px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 50px
+    margin-bottom: 64px
+    &_left
+      position: absolute
+      left: 0
+      top: 0
+      z-index: 2
+    &_right
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 28px
+  &__details
+    width: 360px
+    &[open]
+      background: #FFFFFF
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+      padding-bottom: 1px
+    &[open] .main__details_span-l
+      color: $lightRed
+      padding: 13px 16px
+      display: block
+    &[open] path
+      fill: $lightRed
+    &_span-l
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #000000
+      padding: 13px 16px
+      display: block
+    &_span-r
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
+    &_svgleft
+      margin-left: 11px
+    &_in[open] .main__details_span-in
+      color: $lightRed
+    &_span-in
+      padding: 12px
+      display: block
+      border-left: 5px solid $lightRed
+      margin: 16px
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
+    &_ul
+      margin-left: 28px
+    &_li
+      padding: 6px
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
+
+.carousel
+  display: flex
+  gap: 16px
+  list-style: none
+  padding: 16px
+  border: 1px solid #EBEBEB
+  &__page
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #EF5B70
+  &__arrow
+    width: 8px
+    height: 14px
+    font-weight: 700
+    color: $black
